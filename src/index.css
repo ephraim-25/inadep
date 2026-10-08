@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Tight", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-inadep-base: #481a54;
+  --color-inadep-plum: #481a54;
+  --color-inadep-plum-dark: #32103c;
+  --color-inadep-plum-light: #5d236d;
+  --color-inadep-aubergine: #611f69;
+  --color-inadep-iris: #730394;
+  --color-inadep-violet: #ba01ff;
+  --color-inadep-lilac: #f9f0ff;
+  --color-inadep-wash: #f9f0ff;
+  --color-inadep-border: #eac8fe;
+  --color-inadep-emerald: #059669;
+  --color-inadep-emerald-dark: #047857;
+  --color-inadep-emerald-light: #10b981;
+  --color-inadep-emerald-bg: #ecfdf5;
+  --color-inadep-text: #1c1320;
+  --color-inadep-muted: #6b5e72;
+
+  --radius-btn: 4px;
+  --radius-card: 16px;
+
+  --shadow-ambient: 0 20px 40px -15px rgba(72, 26, 84, 0.12);
+  --shadow-card-hover: 0 25px 50px -12px rgba(97, 31, 105, 0.25);
+  --shadow-glow: 0 0 25px rgba(186, 1, 255, 0.25);
+}
+@layer base {
+  body {
+    @apply bg-inadep-wash text-inadep-text selection:bg-inadep-violet selection:text-white font-sans;
+    letter-spacing: -0.011em;
+  }
+}
+
+@layer components {
+  .headline-hero {
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+  }
+
+  .gradient-text-hero {
+    background: linear-gradient(135deg, #481a54 0%, #ba01ff 60%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-emerald {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass-header {
+    background: rgba(254, 251, 255, 0.92);
+    backdrop-filter: blur(16px);
+  }
+
+  .bg-plum-grid {
+    background-size: 32px 32px;
+    background-image: radial-gradient(circle, rgba(234, 200, 254, 0.15) 1px, transparent 1px);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f9f0ff;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #eac8fe;
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ba01ff;
+  }
+}
