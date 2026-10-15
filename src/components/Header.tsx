@@ -38,13 +38,13 @@ export default function Header() {
             <a href="#" className="flex items-center gap-3.5 group">
               <div className="relative w-12 h-12 flex items-center justify-center shrink-0">
                 <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="42" r="36" stroke="#059669" strokeWidth="5" fill="#ecfdf5"/>
-                  <circle cx="50" cy="42" r="28" stroke="#10b981" strokeWidth="1.5" strokeDasharray="3 3"/>
-                  <ellipse cx="50" cy="42" rx="18" ry="28" stroke="#059669" strokeWidth="1.5"/>
-                  <path d="M 22 42 L 78 42" stroke="#059669" strokeWidth="1.5"/>
+                  <circle cx="50" cy="42" r="36" stroke="#34d399" strokeWidth="5" fill="#ecfdf5"/>
+                  <circle cx="50" cy="42" r="28" stroke="#6ee7b7" strokeWidth="1.5" strokeDasharray="3 3"/>
+                  <ellipse cx="50" cy="42" rx="18" ry="28" stroke="#34d399" strokeWidth="1.5"/>
+                  <path d="M 22 42 L 78 42" stroke="#34d399" strokeWidth="1.5"/>
                   <path d="M 42 26 C 48 24, 58 27, 56 34 C 55 38, 62 42, 58 48 C 55 53, 50 58, 46 60 C 44 56, 42 50, 40 45 C 38 40, 39 32, 42 26 Z" fill="#481a54"/>
                   <circle cx="49" cy="44" r="2.5" fill="#ba01ff"/>
-                  <path d="M 30 76 C 40 68, 50 72, 50 82 C 50 72, 60 68, 70 76 M 50 62 L 50 86" stroke="#059669" strokeWidth="3.5" strokeLinecap="round"/>
+                  <path d="M 30 76 C 40 68, 50 72, 50 82 C 50 72, 60 68, 70 76 M 50 62 L 50 86" stroke="#34d399" strokeWidth="3.5" strokeLinecap="round"/>
                 </svg>
               </div>
               <div className="flex flex-col">
@@ -52,7 +52,7 @@ export default function Header() {
                   <span className="font-display font-extrabold text-2xl tracking-tight text-inadep-plum group-hover:text-inadep-iris transition-colors">INADEP</span>
                   <span className="text-[9px] font-extrabold px-1.5 py-0.5 bg-inadep-lilac text-inadep-plum border border-inadep-border rounded">EST. 1989</span>
                 </div>
-                <span className="text-[10px] font-bold text-inadep-emerald tracking-wider uppercase leading-none mt-0.5">
+                <span className="text-[10px] font-bold text-emerald-500 tracking-wider uppercase leading-none mt-0.5">
                   Institut Africain d'Études Prospectives
                 </span>
               </div>

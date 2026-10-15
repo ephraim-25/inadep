@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, FileText, Download } from 'lucide-react';
 
 const legalData = [
   {
@@ -17,6 +17,25 @@ const legalData = [
           <li><strong>Autonomie :</strong> Personnalité juridique propre, autonomie financière et administrative.</li>
           <li><strong>Siège officiel :</strong> Kinshasa, République Démocratique du Congo.</li>
         </ul>
+        <div className="pt-3 mt-4 border-t border-inadep-border/40 flex flex-wrap gap-3">
+          <a
+            href="/Ordonnance_creation_INADEP.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-btn bg-inadep-aubergine hover:bg-inadep-iris text-white font-bold text-xs uppercase tracking-wider transition-all shadow-sm hover:shadow"
+          >
+            <FileText className="w-4 h-4 text-inadep-emerald-light" />
+            Consulter l'Ordonnance Officielle (PDF)
+          </a>
+          <a
+            href="/Ordonnance_creation_INADEP.pdf"
+            download="Ordonnance_creation_INADEP.pdf"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-btn bg-white hover:bg-inadep-lilac border border-inadep-border text-inadep-plum font-bold text-xs uppercase tracking-wider transition-all"
+          >
+            <Download className="w-4 h-4 text-inadep-plum" />
+            Télécharger le document complet
+          </a>
+        </div>
       </>
     )
   },
